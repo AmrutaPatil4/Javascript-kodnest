@@ -5,12 +5,18 @@
             this.Emp_Name = name,
             this.Emp_Sal = salary
         }
+
+        work() {
+            console.log(this.Emp_Name, ' is working');
+        }
     }
 
     e1 = new Employee('Akash', 35000);
     e2 = new Employee('Ankit', 45000);
+    
     console.log('Name: ',e1.Emp_Name,'Salary: ', e1.Emp_Sal);
-    console.log('Name: ',e2.Emp_Name,'Salary: ', e2oll .Emp_Sal);
+    console.log('Name: ',e2.Emp_Name,'Salary: ', e2.Emp_Sal);
+    e1.work();
 </script>
 
 <!-- <script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document.getElementById()</title>
+    <style></style>
+</head>
+<body>
+    <p id="para">Hello</p>
+    <button onclick="changeclr()">Click</button>
+    <script>
+         let toggle = false;
+        function changeclr() {
+           
+            alert(toggle);
+            var target_ele = document.getElementById('para');
+            if(!toggle){
+                
+                // alert(target_ele);
+                target_ele.style.color = 'red';
+                target_ele.style.backgroundColor = 'yellow';
+                toggle = true;
+            }
+            else {
+                target_ele.style.color = 'black';
+                target_ele.style.backgroundColor = 'white';
+                toggle = false;
+            }
+        }
+    </script>
+</body>
+</html>
